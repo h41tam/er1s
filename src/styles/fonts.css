@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/Cinzel-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("/fonts/Cinzel-Black.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/fonts/CinzelDecorative-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/fonts/CinzelDecorative-Black.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "rodfat";
+  src: url("/fonts/rodfat.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "KASTROO";
+  src: url("/fonts/KASTROO.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Karina";
+  src: url("/fonts/Karina.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "bierika";
+  src: url("/fonts/bierika.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "boston-caps";
+  src: url("/fonts/boston-caps.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "neofolia";
+  src: url("/fonts/neofolia.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "osiris";
+  src: url("/fonts/osiris.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "tan-pearl";
+  src: url("/fonts/tan-pearl.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "nexokoratechno";
+  src: url("/fonts/nexokoratechno-regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ghrathe";
+  src: url("/fonts/Ghrathe.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Stormlight";
+  src: url("/fonts/Stormlight.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Brites";
+  src: url("/fonts/Brites.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-thin.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-extralight.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-light.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-medium.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-semibold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-extrabold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Kycron";
+  src: url("/fonts/kycron-black.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "nexokoratechno";
+  src: url("/fonts/nexokoratechno-italic.woff2") format("woff2");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PortoHeading";
+  src: url("/fonts/CinzelDecorative-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PortoHeading";
+  src: url("/fonts/CinzelDecorative-Black.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "PortoBody";
+  src: url("/fonts/Cinzel-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PortoBody";
+  src: url("/fonts/Cinzel-Black.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+}
+
+:root {
+  --font-cinzel: "Cinzel", ui-serif, Georgia, serif;
+  --font-cinzel-decorative: "Cinzel Decorative", ui-serif, Georgia, serif;
+  --font-rodfat: "rodfat", ui-sans-serif, system-ui, sans-serif;
+  --font-nexokoratechno: "nexokoratechno", ui-sans-serif, system-ui, sans-serif;
+  --font-kastroo: "KASTROO", ui-serif, Georgia, serif;
+  --font-karina: "Karina", ui-serif, Georgia, serif;
+  --font-bierika: "bierika", ui-serif, Georgia, serif;
+  --font-boston-caps: "boston-caps", ui-serif, Georgia, serif;
+  --font-neofolia: "neofolia", ui-serif, Georgia, serif;
+  --font-osiris: "osiris", ui-serif, Georgia, serif;
+  --font-tan-pearl: "tan-pearl", ui-serif, Georgia, serif;
+  --font-kycron: "Kycron", ui-sans-serif, system-ui, sans-serif;
+  --font-brites: "Brites", ui-sans-serif, system-ui, sans-serif;
+}

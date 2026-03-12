@@ -1,0 +1,168 @@
+@import "./styles/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-black font-body text-white antialiased;
+    text-rendering: geometricPrecision;
+  }
+
+  ::selection {
+    background: #6d001a;
+    color: #ffffff;
+  }
+
+  a {
+    @apply text-white/80 transition-colors;
+  }
+
+  a:hover {
+    @apply text-white;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .section {
+    @apply py-16 md:py-20;
+    scroll-margin-top: 80px;
+  }
+
+  .eyebrow {
+    @apply font-body text-xs tracking-[0.28em] text-white/60;
+  }
+
+  .h1 {
+    @apply font-heading text-5xl leading-[0.95] md:text-7xl headline-track;
+  }
+
+  .h2 {
+    @apply font-heading text-3xl leading-tight md:text-4xl headline-track;
+  }
+
+  .p {
+    @apply text-base leading-relaxed text-white/75;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 text-sm font-medium transition;
+  }
+
+  .btn-primary {
+    @apply border-burgundy bg-burgundy text-white shadow-soft hover:bg-black hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply border-white/15 bg-black text-white/85 hover:border-white/30 hover:text-white;
+  }
+
+  .btn-arcane {
+    @apply relative overflow-hidden border text-white/90;
+    border-color: rgba(109, 0, 26, 0.45);
+    background: linear-gradient(135deg, rgba(109, 0, 26, 0.22), rgba(255, 255, 255, 0.04));
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 18px 55px rgba(109, 0, 26, 0.18);
+  }
+
+  .btn-arcane::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: radial-gradient(circle at 20% 20%, rgba(109, 0, 26, 0.65), transparent 55%),
+      radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.16), transparent 60%);
+    opacity: 0;
+    transition: opacity 220ms ease;
+  }
+
+  .btn-arcane::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -40%;
+    width: 55%;
+    height: 220%;
+    transform: rotate(22deg) translateX(-140%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+    transition: transform 520ms ease;
+    mix-blend-mode: screen;
+    opacity: 0.85;
+  }
+
+  .btn-arcane:hover::before {
+    opacity: 1;
+  }
+
+  .btn-arcane:hover::after {
+    transform: rotate(22deg) translateX(260%);
+  }
+
+  .btn-arcane-primary {
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  .btn-arcane:hover {
+    border-color: rgba(109, 0, 26, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 24px 70px rgba(109, 0, 26, 0.25);
+  }
+
+  .btn-arcane-ghost {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 bg-black shadow-soft;
+  }
+}
+
+@layer utilities {
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.16;
+    background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08) 0 1px, transparent 2px),
+      radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.06) 0 1px, transparent 2px),
+      radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.05) 0 1px, transparent 2px);
+    background-size: 180px 180px;
+    mix-blend-mode: overlay;
+  }
+
+  .headline-track {
+    letter-spacing: -0.04em;
+  }
+}
