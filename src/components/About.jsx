@@ -64,8 +64,8 @@ const About = () => {
 
       ScrollTrigger.create({
         trigger: section,
-        start: "top 70%",
-        end: "bottom 30%",
+        start: "top 75%",
+        end: "bottom 25%",
         onEnter: animateIn,
         onLeave: animateOut,
         onEnterBack: animateIn,
@@ -77,8 +77,8 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="about" className="section">
-      <div className="container-x">
+    <section ref={sectionRef} id="about" className="section w-full max-w-full overflow-hidden">
+      <div className="container-x w-full max-w-full">
         <div className="grid gap-8 md:grid-cols-12 md:items-start">
           <div className="md:col-span-5" data-anim="about-left">
             <div className="font-kastroo font-bold text-xs tracking-[0.88em] text-white/60">Introduction</div>
@@ -89,12 +89,12 @@ const About = () => {
               </h2>
               <IconHeartHandshake size={35} className="text-white mt-3 ml-2 drop-shadow-[0_0_5px_rgba(255,255,255,1)]" />
             </div>
-            <p className="text-justify font-boston-caps leading-relaxed tracking-[0.05em] text-white/75 mt-4">
+            <p className="text-justify font-kycron uppercase leading-relaxed tracking-[0.05em] text-white/75 mt-4">
               <span className="font-osiris text-white drop-shadow-[0_0_3px_rgba(255,255,255,1)]">ER1S </span>
-              is a graduated Junior Full-Stack Web Developer.<br />
+              is a Junior Full-Stack Web Developer.<br />
               And I am passionate about building modern web applications, continuously improving my technical skills while working on real-world projects.
             </p>
-            <p className="text-justify font-boston-caps leading-relaxed tracking-[0.05em] text-white/75 mt-3">
+            <p className="text-justify font-kycron uppercase leading-relaxed tracking-[0.05em] text-white/75 mt-3">
               My experience is wide, ranging from e-commerce and eBook platforms to event management systems.
               I am currently exploring cybersecurity and SaaS as the next step in my journey.
 
@@ -102,7 +102,7 @@ const About = () => {
           </div>
 
           <div className="md:col-span-7" data-anim="about-right">
-            <div className="rounded-2xl border border-white/10 bg-black shadow-soft relative overflow-hidden p-6 md:p-8 
+            <div className="rounded-2xl border hover:cursor-pointer border-white/10 bg-black shadow-soft relative overflow-hidden p-6 md:p-8 
                  bg-[radial-gradient(circle_at_20%_10%,rgba(109,0,26,0.55),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(109,0,0,0.08),transparent_10%)]
                  transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]">
 

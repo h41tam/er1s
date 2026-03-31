@@ -1,5 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { IconHome, IconMenu2, IconUser, IconX, IconFolderSearch, IconMessages } from "@tabler/icons-react";
+import TimelineGlobe from "./TimelineGlobe";
+import NavTyper from "./NavTyper";
+
+
 
 const Navigation = () => {
   const links = useMemo(
@@ -46,19 +50,19 @@ const Navigation = () => {
         scrolled ? "bg-black/70 backdrop-blur border-b border-white/10" : "bg-transparent",
       ].join(" ")}
     >
-      <div className="container-x py-4">
-        <div className="flex items-center justify-between">
+      <div className="container-x w-full max-w-full">
+        <div className="-ml-[15px] flex h-14 items-center justify-between">
           <button
             type="button"
             onClick={() => scrollToSection("home")}
-            className="group/logo relative font-cinzel text-lg tracking-tight text-white/90 transition-colors hover:text-white"
+            className="group/logo relative flex items-center font-cinzel text-lg tracking-tight text-white/90 transition-colors hover:text-white"
           >
-            <span className="transition-[filter] duration-300 group-hover/logo:drop-shadow-[0_0_5px_rgba(255,255,255,1)]">
+            <TimelineGlobe className="h-[60px] w-[60px] -mr-[8px]" />
+            <span className="mt-[10px] font-harmoni text-3xl transition-[filter] duration-300 group-hover/logo:drop-shadow-[0_0_5px_rgba(255,255,255,1)]">
               ER1S
             </span>
-            <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-white/60 transition-transform duration-300 group-hover/logo:scale-x-100" />
           </button>
-
+          <NavTyper />
           <nav className="hidden items-center gap-6 md:flex">
             {links.map((link) => (
               <button
@@ -90,7 +94,7 @@ const Navigation = () => {
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             <span className="transition-[filter] duration-300 group-hover/navtoggle:drop-shadow-[0_0_5px_rgba(255,255,255,1)]">
-              {isOpen ? <IconX size={22} /> : <IconMenu2 size={22} />}
+              {isOpen ? <IconX size={26} /> : <IconMenu2 size={26} />}
             </span>
           </button>
         </div>

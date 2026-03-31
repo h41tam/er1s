@@ -15,7 +15,7 @@ const Index = () => {
             {loading && <Preloader onComplete={() => setLoading(false)} />}
 
             {!loading && (
-                <div className="min-h-screen w-full overflow-x-hidden bg-[radial-gradient(circle_at_20%_10%,rgba(109,0,26,0.55),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(255,255,255,0.08),transparent_55%)] grain">
+                <div className="min-h-screen w-full bg-[radial-gradient(circle_at_20%_10%,rgba(109,0,26,0.55),transparent_55%),radial-gradient(circle_at_80%_30%,rgba(255,255,255,0.08),transparent_55%)] grain">
                     <Navigation />
                     <Hero />
                     <About />

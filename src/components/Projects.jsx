@@ -85,8 +85,8 @@ const Projects = () => {
 
       ScrollTrigger.create({
         trigger: section,
-        start: "top 70%",
-        end: "bottom 30%",
+        start: "top 75%",
+        end: "bottom 25%",
         onEnter: animateIn,
         onLeave: animateOut,
         onEnterBack: animateIn,
@@ -98,8 +98,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="projects" className="section">
-      <div className="container-x -mt-[100px]">
+    <section ref={sectionRef} id="projects" className="section w-full max-w-full overflow-hidden">
+      <div className="container-x w-full max-w-full -mt-[100px]">
         <div className="font-kastroo font-bold text-xs tracking-[0.88em] text-white/60">Gallery</div>
         <div className="flex items-center animate-pulse">
           <h2 className="text-3xl leading-tight md:text-4xl 

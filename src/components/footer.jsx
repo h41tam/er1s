@@ -45,13 +45,13 @@ const Footer = () => {
     };
 
     return (
-        <footer ref={footerRef} className="relative overflow-hidden border-t border-white/10 bg-black/40 py-10 backdrop-blur">
+        <footer ref={footerRef} className="relative overflow-hidden border-t border-white/10 bg-black/40 py-10 backdrop-blur w-full max-w-full">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -left-32 -top-32 h-[360px] w-[360px] rounded-full bg-[#6d001a] opacity-25 blur-3xl" />
                 <div className="absolute -bottom-32 -right-32 h-[360px] w-[360px] rounded-full bg-[#4b0015] opacity-20 blur-3xl" />
             </div>
 
-            <div className="container-x relative z-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="container-x relative z-10 flex flex-col gap-6 md:flex-row md:items-center md:justify-between w-full max-w-full">
                 <div className="w-full text-center text-sm text-white/60 tracking-[0.2em] font-brites md:w-auto md:text-left">
                     © {new Date().getFullYear()} <span className="text-white font-osiris drop-shadow-[0_0_5px_rgba(255,255,255,1)] animate-pulse transition-all duration-300">ER1S</span> ALL RIGHTS RESERVED.
                 </div>

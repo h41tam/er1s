@@ -26,6 +26,7 @@ export default {
         stormlight: ["Stormlight", "ui-serif", "Georgia", "serif"],
         kycron: ["Kycron", "ui-sans-serif", "system-ui", "sans-serif"],
         brites: ["Brites", "ui-sans-serif", "system-ui", "sans-serif"],
+        harmoni: ["Harmoni", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       letterSpacing: {
         headline: "-0.04em",
@@ -39,10 +40,15 @@ export default {
           '33%': { transform: 'translate(40px, -50px) scale(1.1)' },
           '66%': { transform: 'translate(-30px, 40px) scale(0.9)' },
           '100%': { transform: 'translate(0px, 0px) scale(1)' },
+        },
+        'spin-reverse': {
+          from: { transform: 'rotate(360deg)' },
+          to: { transform: 'rotate(0deg)' }
         }
       },
       animation: {
-        blob: 'blob 18s infinite ease-in-out'
+        blob: 'blob 18s infinite ease-in-out',
+        'spin-reverse': 'spin-reverse 1.5s linear infinite'
       }
     },
   },

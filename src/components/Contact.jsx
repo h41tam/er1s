@@ -31,8 +31,8 @@ const Contact = () => {
 
       ScrollTrigger.create({
         trigger: section,
-        start: "top 72%",
-        end: "bottom 30%",
+        start: "top 75%",
+        end: "bottom 25%",
         onEnter: animateIn,
         onLeave: animateOut,
         onEnterBack: animateIn,
@@ -44,8 +44,8 @@ const Contact = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="contact" className="section">
-      <div className="container-x -mt-20">
+    <section ref={sectionRef} id="contact" className="section w-full max-w-full overflow-hidden">
+      <div className="container-x w-full max-w-full -mt-20">
         <div className="grid gap-8 md:grid-cols-12 md:items-start">
           <div className="md:col-span-5">
             <div className="font-kastroo font-bold text-xs tracking-[0.88em] text-white/60">CONTACT</div>

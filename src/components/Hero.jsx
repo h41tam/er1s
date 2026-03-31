@@ -47,22 +47,33 @@ const Hero = () => {
 
       ScrollTrigger.create({
         trigger: section,
-        start: "top 78%",
-        end: "bottom 22%",
-        onEnter: animateIn,
-        onLeave: animateOut,
-        onEnterBack: animateIn,
-        onLeaveBack: animateOut,
+        start: "top 100%", // Start immediately as it's the first section
+        end: "bottom 30%", // Fade out when the bottom of the section is 30% from the top
+        onToggle: (self) => {
+          if (self.isActive) {
+            animateIn();
+          } else {
+            animateOut();
+          }
+        },
+        onRefresh: (self) => {
+          if (self.isActive) animateIn();
+        }
       });
+
+      // Immediate reveal for initial load at the top
+      if (window.scrollY < 100) {
+        animateIn();
+      }
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section ref={sectionRef} id="home" className="pt-28 md:pt-32" style={{ scrollMarginTop: 80 }}>
-      <div className="container-x">
-        <div className="relative rounded-2xl -mt-10 border border-white/10 bg-black shadow-soft grain items-center justify-center overflow-hidden">
+    <section ref={sectionRef} id="home" className="pt-28 md:pt-32 w-full max-w-full overflow-hidden" style={{ scrollMarginTop: 80 }}>
+      <div className="container-x w-full max-w-full">
+        <div className="relative rounded-2xl -mt-10 border border-white/10 bg-black shadow-soft grain items-center justify-center overflow-hidden w-full max-w-full">
           <div
             data-anim="hero-right"
             className="pointer-events-none absolute bottom-0 right-0 hidden select-none md:block"
@@ -77,7 +88,7 @@ const Hero = () => {
           <img
             src={heroImage}
             alt=""
-            className="pointer-events-none absolute -right-10 bottom-[0px] w-[290px] select-none rounded-3xl object-contain opacity-25 blur-[0.35px] md:hidden"
+            className="pointer-events-none absolute right-0 bottom-0 w-[290px] select-none rounded-3xl object-contain opacity-25 blur-[0.35px] md:hidden"
             draggable="false"
           />
 

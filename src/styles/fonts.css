@@ -135,6 +135,14 @@
 }
 
 @font-face {
+  font-family: "Harmoni";
+  src: url("/fonts/TanHarmoni-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
   font-family: "Kycron";
   src: url("/fonts/kycron-extralight.woff2") format("woff2");
   font-display: swap;
